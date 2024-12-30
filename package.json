@@ -1,0 +1,13 @@
+{
+  "name": "flask-tailwind-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "tailwindcss -i ./static/styles.css -o ./static/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./static/styles.css -o ./static/tailwind.css --watch",
+    "minify-html": "html-minifier-terser --collapse-whitespace --remove-comments --minify-js true --input-dir=./templates --output-dir=./templates-min"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.17",
+    "html-minifier-terser": "^7.2.0"
+  }
+}
