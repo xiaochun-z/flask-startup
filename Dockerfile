@@ -11,7 +11,7 @@ RUN npm install
 COPY tailwind.config.js ./
 COPY static/styles.css ./static/styles.css
 COPY templates templates
-RUN ls templates
+
 
 # Build Tailwind CSS
 RUN npm run build:css
