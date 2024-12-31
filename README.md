@@ -11,3 +11,10 @@ docker run --rm -it -p 8000:8000 flask-startup /bin/bash
 gunicorn -b 0.0.0.0:8000 -w 4 app:app
 
 ```
+
+mount with volume configuration so you can copy your files to your host, such as tailwind.css.
+```bash
+docker run --rm -it -p 8000:8000 -v $(pwd)/build/out:/out flask-startup /bin/sh
+# now you're in the container, copy everything out to your host machine
+cp -r /app /out
+```

@@ -1,1 +1,8 @@
 README.md
+__pycache__
+build
+instance
+venv
+.dockerignore
+.git
+.gitignore
