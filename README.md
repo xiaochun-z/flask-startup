@@ -1,6 +1,11 @@
 A starter template for launching a Flask web application(hosted in docker), showcasing the use of Tailwind CSS and HTML template minification.
 
-a few command tips for you to start the sample.
+This can be useful if you're focusing on the python and need some pre-configuration for GUI, or maybe you know python but are not quite familiar with flask. 
+
+The example demonstrates how to use HTML templates, sessions, forms, Tailwind CSS, and HTML minification. It's a starting point for your Flask app.
+
+Here are a few command tips for you to start the sample.
+
 
 ```bash
 docker build -t flask-startup .
