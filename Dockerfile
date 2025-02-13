@@ -4,11 +4,11 @@ FROM node:23-alpine AS builder
 WORKDIR /app
 
 # Copy package.json and package-lock.json
-COPY package.json ./
+COPY package.json package-lock.json ./
+RUN npm install tailwindcss @tailwindcss/cli
 RUN npm install
 
 # Copy Tailwind configuration files
-COPY tailwind.config.js ./
 COPY static/styles.css ./static/styles.css
 COPY templates templates
 

@@ -6,3 +6,4 @@ venv
 .dockerignore
 .git
 .gitignore
+node_modules
