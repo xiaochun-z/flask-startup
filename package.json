@@ -2,15 +2,15 @@
   "name": "flask-tailwind-app",
   "version": "1.0.0",
   "scripts": {
-    "build:css": "npx @tailwindcss/cli -i ./static/styles.css -o ./static/tailwind.css --minify",
+    "build:css": "npx @tailwindcss/cli -i ./static/styles.css -o ./static/tailwind.css -m --optimize",
     "watch:css": "npx @tailwindcss/cli -i ./static/styles.css -o ./static/tailwind.css --watch",
     "minify-html": "html-minifier-terser --collapse-whitespace --remove-comments --minify-js true --input-dir=./templates --output-dir=./templates-min"
   },
   "dependencies": {
     "html-minifier-terser": "^7.2.0",
-    "tailwindcss": "^4.1.7"
+    "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.7"
+    "@tailwindcss/cli": "^4.1.8"
   }
 }
